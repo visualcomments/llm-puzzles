@@ -1,7 +1,7 @@
 from typing import List, Tuple
 from copy import deepcopy
-from ...src.movesets import Moveset, Move
-from ...src.metrics import inversions_count
+from src.movesets import Moveset, Move
+from src.metrics import inversions_count
 
 def solve(p: List[int], moveset: Moveset, budget: int) -> List[Move]:
     """Жадная эвристика:

@@ -19,7 +19,7 @@ TASKS: Dict[str, Callable[[], Task]] = {
 
 # ---- Candidates ----
 from .baselines import bubble_baseline
-from ..examples.candidates.heuristic1 import solve as heuristic1
+from examples.candidates.heuristic1 import solve as heuristic1
 
 CANDIDATES: Dict[str, Callable] = {
     "baseline": bubble_baseline,
