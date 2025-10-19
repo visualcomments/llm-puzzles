@@ -128,7 +128,7 @@ def get_models_list(config: Dict) -> List[str]:
         merged = ok + rest
 
     if not merged:
-        merged = ['gpt-4o-mini','gpt-4o','gpt-3.5-turbo','claude-3-haiku','llama-3.1-8b']
+        merged = ['aria','command-r','command-a']
     return merged
 
 def llm_query(model: str, prompt: str, retries_config: Dict, config: Dict, progress_queue: queue.Queue, stage: str = None) -> Optional[str]:
